@@ -14,10 +14,24 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
-add_executable(test
-  main.cpp
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/SQLiteCpp)
+
+add_executable(
+    test
+    app/main.cpp
 )
-target_link_libraries(test Qt${QT_VERSION_MAJOR}::Core)
+
+#link_directories(-L/usr/lib/x86_64-linux-gnu -lsqlite3 SQLiteCpp/build )
+
+
+target_link_libraries(
+    test
+    Qt${QT_VERSION_MAJOR}::Core
+    sqlite3
+    pthread
+    dl
+    SQLiteCpp
+)
 
 install(TARGETS test
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})

@@ -1,40 +1,14 @@
 <p align="center"> 
-  <img src="images/Project Logo.png" alt="HAR Logo" width="80px" height="80px">
+  <img src="https://user-images.githubusercontent.com/102062869/196044905-e0d571de-da3e-4d4d-940b-7b06bb79557a.png" alt="HAR Logo" width="500px" height="500px">
 </p>
-<h1 align="center"> Human Activity Recognition </h1>
-<h3 align="center"> A Comparative Study between Different Pre-processing Approaches and Classifiers </h3>  
+<h1 align="center"> Hospital Management System </h1>
+<h3 align="center"> A customizable, comprehensive, and integrated Hospital Management System designed to manage all hospital operations. </h3>  
 
 </br>
 
 <p align="center"> 
   <img src="images/Signal.gif" alt="Sample signal" width="70%" height="70%">
 </p>
-
-<!-- TABLE OF CONTENTS -->
-<h2 id="table-of-contents"> :book: Table of Contents</h2>
-
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project"> ➤ About The Project</a></li>
-    <li><a href="#prerequisites"> ➤ Prerequisites</a></li>
-    <li><a href="#folder-structure"> ➤ Folder Structure</a></li>
-    <li><a href="#dataset"> ➤ Dataset</a></li>
-    <li><a href="#roadmap"> ➤ Roadmap</a></li>
-    <li>
-      <a href="#preprocessing"> ➤ Preprocessing</a>
-      <ul>
-        <li><a href="#preprocessed-data">Pre-processed data</a></li>
-        <li><a href="#statistical-feature">Statistical feature</a></li>
-        <li><a href="#topological-feature">Topological feature</a></li>
-      </ul>
-    </li>
-    <!--<li><a href="#experiments">Experiments</a></li>-->
-    <li><a href="#results-and-discussion"> ➤ Results and Discussion</a></li>
-    <li><a href="#references"> ➤ References</a></li>
-    <li><a href="#contributors"> ➤ Contributors</a></li>
-  </ol>
-</details>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -57,8 +31,8 @@
 <!-- PREREQUISITES -->
 <h2 id="prerequisites"> :fork_and_knife: Prerequisites</h2>
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) <br>
-[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try) <br>
+[![made-with-cpp](https://img.shields.io/badge/Made%20With-C%2B%2B17-success)](https://en.cppreference.com) <br>
+[![maintainer](https://img.shields.io/badge/Maintainer-DolevMishali-blueviolet)](https://www.linkedin.com/in/dolevmishali343/) <br>
 
 <!--This project is written in Python programming language. <br>-->
 The following open source packages are used in this project:
@@ -70,56 +44,6 @@ The following open source packages are used in this project:
 * Giotto-tda
 * TensorFlow
 * Keras
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- :paw_prints:-->
-<!-- FOLDER STRUCTURE -->
-<h2 id="folder-structure"> :cactus: Folder Structure</h2>
-
-    code
-    .
-    │
-    ├── data
-    │   ├── raw_data
-    │   │   ├── phone
-    │   │   │   ├── accel
-    │   │   │   └── gyro
-    │   │   ├── watch
-    │   │       ├── accel
-    │   │       └── gyro
-    │   │
-    │   ├── transformed_data
-    │   │   ├── phone
-    │   │   │   ├── accel
-    │   │   │   └── gyro
-    │   │   ├── watch
-    │   │       ├── accel
-    │   │       └── gyro
-    │   │
-    │   ├── feature_label_tables
-    │   │    ├── feature_phone_accel
-    │   │    ├── feature_phone_gyro
-    │   │    ├── feature_watch_accel
-    │   │    ├── feature_watch_gyro
-    │   │
-    │   ├── wisdm-dataset
-    │        ├── raw
-    │        │   ├── phone
-    │        │   ├── accel
-    │        │   └── gyro
-    │        ├── watch
-    │            ├── accel
-    │            └── gyro
-    │
-    ├── CNN_Impersonal_TransformedData.ipynb
-    ├── CNN_Personal_TransformedData.ipynb  
-    ├── CNN_Impersonal_RawData.ipynb    
-    ├── CNN_Personal_RawData.ipynb 
-    ├── Classifier_SVM_Personal.ipynb
-    ├── Classifier_SVM_Impersonal.ipynb
-    ├── statistical_analysis_time_domain.py
-    ├── Topological data analysis.ipynb  
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -140,63 +64,6 @@ The following open source packages are used in this project:
 
 <p align="center">
   <img src="images/Activity Table.png" alt="Table1: 18 Activities" width="45%" height="45%">
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- ROADMAP -->
-<h2 id="roadmap"> :dart: Roadmap</h2>
-
-<p align="justify"> 
-  Weiss et. al. has trained three models namely Decision Tree, k-Nearest Neighbors, and Random Forest for human activity classification by preprocessing the raw time series data using statistical feature extraction from segmented time series. 
-  The goals of this project include the following:
-<ol>
-  <li>
-    <p align="justify"> 
-      Train the same models - Decision Tree, k Nearest Neighbors, and Random Forest using the preprocessed data obtained from topological data analysis and compare the
-      performance against the results obtained by Weiss et. al.
-    </p>
-  </li>
-  <li>
-    <p align="justify"> 
-      Train SVM and CNN using the preprocessed data generated by Weiss et. al. and evaluate the performance against their Decision Tree, k Nearest Neighbors, and Random Forest models.
-    </p>
-  </li>
-</ol>
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- PREPROCESSING -->
-<h2 id="preprocessing"> :hammer: Preprocessing</h2>
-
-<p align="justify"> 
-  The WISDM (Wireless Sensor Data Mining) dataset includes raw time-series data collected from accelerometer and gyroscope sensors of a smartphone and smartwatch with their corresponding labels for each activity. The sensor data was collected at a rate of 20 Hz (i.e., every 50ms). Weiss et.al., collected this dataset from 51 subjects who performed 18 different activities listed in the previous table, each for 3 minutes, while having the smartphone in their right pant pocket and wearing the smartwatch in their dominant hand. <br>
-  In this project we tried three different feature sets, extracted from the raw data, which are as follows: 
-  <ol>
-    <li><b>Pre-processed data</b> generated by Weiss et. al.</li> 
-    <li><b>Statistical feature extraction</b></li>
-    <li><b>Topological feature extraction</b></li>
-  </ol>
-  
-All these three approaches used windowing technique to segment the raw time series and extract features from each segment.
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- PRE-PROCESSED DATA -->
-<h2 id="preprocessed-data"> :diamond_shape_with_a_dot_inside: Pre-processed data</h2>
-
-<p align="justify"> 
-  Weiss et.al used windowing technique with window size of 10 seconds to extract statistical features. They extracted 93 features out of which 43 were used to train their models. We also used the same 43 features to train our SVM and CNN. The 43 features are 1. average sensor value 2. standard deviation 3. absolute difference 4. average resultant acceleration 5. Binned distribution (10 equal sized bins per axis) and 5. time between peaks, for each axis.
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- STATISTICAL FEATURE -->
-<h2 id="statistical-feature"> :large_orange_diamond: Statistical feature</h2>
-
-<p align="justify"> 
-  For this approach, we segmented the dataset using 10 second window size (200 datapoints) with no overlapping. We decided to keep the window size same as whatWeiss et.al. applied in their study, for the sake of comparison. After segmentation, for each segment we calculated eight statistical features, namely, ‘min’, ‘max’, ‘mean’, ‘standard deviation’, ‘median’, ‘variance’, ‘zero crossing’ and ‘mean crossing’, for each axes. The zero and mean crossing features are calculated by counting the rate of when a signal passes line y=0 (if we let y-axis to be the specific measurement and x-axis to represent time) and the frequency at which the signal passes the line y = mean(signal), respectively. However, these two features did not show a significant difference between different activities, so we decided to ignore them.
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -289,24 +156,9 @@ All these three approaches used windowing technique to segment the raw time seri
 <h2 id="contributors"> :scroll: Contributors</h2>
 
 <p>
-  :mortar_board: <i>All participants in this project are graduate students in the <a href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">Department of Computer Science and Software Engineering</a> <b>@</b> <a href="https://www.concordia.ca/">Concordia University</a></i> <br> <br>
-  
-  :woman: <b>Divya Bhagavathiappan Shiva</b> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: <a>divya.bhagavathiappanshiva@mail.concordia.ca</a> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/divyabhagavathiappan">@divyabhagavathiappan</a> <br>
-  
-  :woman: <b>Reethu Navale</b> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: <a>reethu.navale@mail.concordia.ca</a> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/reethunavale">@reethunavale</a> <br>
+  :mortar_board: <i>All participants in this project are students in the Department of Computer Engineering Ruppin Academic Center</i> <br> <br>
 
-  :woman: <b>Mahsa Sadat Afzali Arani</b> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: <a>m_afzali93@yahoo.com</a> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/MahsaAfzali">@MahsaAfzali</a> <br>
-
-  :boy: <b>Mohammad Amin Shamshiri</b> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: <a>mohammadamin.shamshiri@mail.concordia.ca</a> <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/ma-shamshiri">@ma-shamshiri</a> <br>
+  :man: <b>Dolev Mishali</b> <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email: <a>Dolevmi2010@gmail.com</a> <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/DolevMishali">@DolevMishali</a> <br>
 </p>
-
-<br>
-✤ <i>This was the final project for the course COMP 6321 - Machine Learning (Fall 2020), at <a href="https://www.concordia.ca/">Concordia University</a><i>

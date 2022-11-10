@@ -16,10 +16,24 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/SQLiteCpp)
 
+include_directories(include/)
+
 add_executable(
     test
     app/main.cpp
+    tests/test_personAndHospital.cpp
+
+    src/hospital.cpp
+    src/person.cpp
+    src/patient.cpp
+
+
+    include/patient.h
+    include/person.h
+    include/hospital.h
+    include/types.h
 )
+
 
 #link_directories(-L/usr/lib/x86_64-linux-gnu -lsqlite3 SQLiteCpp/build )
 

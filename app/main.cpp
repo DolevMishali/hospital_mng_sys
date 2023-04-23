@@ -1,6 +1,7 @@
 //#include "hospital.h"
 //#include "person.h"
 #include "hospital.h"
+#include "mng.hpp"
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -8,11 +9,14 @@
 #include <SQLiteCpp/SQLiteCpp.h>
 #include <QCoreApplication>
 
+void test();
+
 int main(int argc, char *argv[])
 {
-    Hospital hosp = Hospital();
+    //Hospital hosp = Hospital();
     hosp.addPatient();
-    std::cout << "";
+    test();
+    printMenu();
 /*QCoreApplication a(argc, argv);
     // Using SQLITE_VERSION would require #include <sqlite3.h> which we want to avoid: use SQLite::VERSION if possible.
     //  std::cout << "SQlite3 version " << SQLITE_VERSION << std::endl;
@@ -36,4 +40,8 @@ int main(int argc, char *argv[])
     ID.toString();
     Person newPerson(ID,"Dolev",Male,d1,24,"Pardes Hanna",525421700);
     cout << newPerson; */
+}
+
+void test() {
+    hosp.addPatient();
 }

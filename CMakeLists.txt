@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(test LANGUAGES CXX)
+project(hospital_mng_sys LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -19,15 +19,14 @@ add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/SQLiteCpp)
 include_directories(include/)
 
 add_executable(
-    test
+    hospital_mng_sys
     app/main.cpp
-    tests/test_personAndHospital.cpp
 
     src/hospital.cpp
     src/person.cpp
     src/patient.cpp
 
-
+    include/mng.hpp
     include/patient.h
     include/person.h
     include/hospital.h
@@ -39,7 +38,7 @@ add_executable(
 
 
 target_link_libraries(
-    test
+    hospital_mng_sys
     Qt${QT_VERSION_MAJOR}::Core
     sqlite3
     pthread
@@ -47,5 +46,5 @@ target_link_libraries(
     SQLiteCpp
 )
 
-install(TARGETS test
+install(TARGETS hospital_mng_sys
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})

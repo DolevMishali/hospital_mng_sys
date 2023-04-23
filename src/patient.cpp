@@ -1,4 +1,5 @@
 #include "patient.h"
+#include "mng.hpp"
 #include <iostream>
 
 float Patient::getWeight() const
@@ -29,4 +30,6 @@ Patient::Patient(float weight,
                  const QDate &birthDate,
                  const std::string &personAddress,
                  int personPhone): Person(QUuid::createUuid(), personName, gender, birthDate,personAddress, personPhone),weight(weight),height(height)
-{}
+{
+    hosp.addPatient();;
+}
